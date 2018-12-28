@@ -1,0 +1,5 @@
+package ${PACKAGE_NAME};
+
+import com.mobily.activity.core.platform.BaseViewModel
+
+class ${NAME} : BaseViewModel() {}

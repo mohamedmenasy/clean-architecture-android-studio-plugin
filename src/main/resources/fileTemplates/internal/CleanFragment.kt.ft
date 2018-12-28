@@ -1,0 +1,13 @@
+package ${PACKAGE_NAME};
+
+import org.koin.android.ext.android.inject
+import org.koin.android.viewmodel.ext.android.viewModel
+
+class ${NAME} : BaseFragment() {
+
+    private val navigator: Navigator by inject()
+    private val sessionProvider: SessionProvider by inject()
+    private val splashViewModel: ${VIEW_MODEL}  by viewModel()
+
+    override fun layoutId() = ${LAYOUT_FILE_NAME}
+}

@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.mohamedmenasy.clean</id>
+    <name>Clean Architecture Templates</name>
+    <version>0.1.1-SNAPSHOT</version>
+    <vendor email="mohamedmenasy@gmail.com" url="https://github.com/mohamedmenasy">Mohamed</vendor>
+
+    <description><![CDATA[
+        This plugin provides the ability to create all files needed to create an feature following the
+        clean architect design pattern
+    ]]></description>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="171"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultProjectTypeProvider type="Android"/>
+        <internalFileTemplate name="ActivityInjectorBlock"/>
+        <internalFileTemplate name="CleanActivity"/>
+        <internalFileTemplate name="CleanFragment"/>
+        <internalFileTemplate name="CleanViewModel"/>
+        <internalFileTemplate name="Layout"/>
+    </extensions>
+
+    <actions>
+        <action class="clean.action.NewActivityScene"
+                description="Creates a new Feature and Its components" icon="/icons/action.png"
+                id="NewActivityScene" text="Create New Feature">
+            <add-to-group anchor="after" group-id="NewGroup" relative-to-action="Kotlin.NewFile"/>
+        </action>
+    </actions>
+
+</idea-plugin>

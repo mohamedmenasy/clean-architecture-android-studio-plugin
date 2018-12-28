@@ -1,0 +1,5 @@
+
+val ${NAME}ViewModel = module {
+
+    viewModel { ${NAME}ViewModel() }
+}
