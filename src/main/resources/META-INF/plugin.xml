@@ -1,13 +1,20 @@
 <idea-plugin>
     <id>com.mohamedmenasy.clean</id>
     <name>Clean Architecture Templates</name>
-    <version>0.1.1-SNAPSHOT</version>
-    <vendor email="mohamedmenasy@gmail.com" url="https://github.com/mohamedmenasy">Mohamed</vendor>
+    <version>0.0.1</version>
+    <vendor email="mohamedmenasy@gmail.com" url="https://github.com/mohamedmenasy">Mohamed Nabil</vendor>
 
     <description><![CDATA[
         This plugin provides the ability to create all files needed to create an feature following the
         clean architect design pattern
     ]]></description>
+
+    <change-notes><![CDATA[
+      <ul>
+        <li>First Version</li>
+      </ul>
+    ]]>
+    </change-notes>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
     <idea-version since-build="171"/>
@@ -17,6 +24,9 @@
     <!-- uncomment to enable plugin in all products -->
     <depends>com.intellij.modules.lang</depends>
     <depends>org.jetbrains.android</depends>
+
+    <depends>com.intellij.modules.androidstudio</depends>
+
     <depends>org.jetbrains.kotlin</depends>
     <extensions defaultExtensionNs="com.intellij">
         <defaultProjectTypeProvider type="Android"/>
