@@ -40,11 +40,13 @@ intellij {
     pluginName 'Clean Architecture Templates'
     plugins = ['android', 'Kotlin', 'Gradle']
     updateSinceUntilBuild false
+    alternativeIdePath "/Applications/Android Studio.app"
 
-   if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        alternativeIdePath "C:\\Program Files\\Android\\Android Studio"
+   /*if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        //alternativeIdePath "C:\\Program Files\\Android\\Android Studio"
+        alternativeIdePath "D:\\Android Studio"
     } else {
         alternativeIdePath "/Applications/Android Studio.app"
-    }
+    }*/
 
 }

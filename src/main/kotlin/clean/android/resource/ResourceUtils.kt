@@ -14,8 +14,8 @@ class ResourceUtils {
 
         @JvmStatic
         fun getResourceSubDirs(resourceType: ResourceFolderType, facet: AndroidFacet): List<VirtualFile> {
-            val resourceDirs = facet.resourceFolderManager.folders
 
+            val resourceDirs = facet.allResourceDirectories
             val dirs = ArrayList<VirtualFile>()
 
             resourceDirs

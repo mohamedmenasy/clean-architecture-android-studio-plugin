@@ -25,7 +25,9 @@
     <depends>com.intellij.modules.lang</depends>
     <depends>org.jetbrains.android</depends>
 
-    <depends>com.intellij.modules.androidstudio</depends>
+    <!--
+        <depends>com.intellij.modules.androidstudio</depends>
+    -->
 
     <depends>org.jetbrains.kotlin</depends>
     <extensions defaultExtensionNs="com.intellij">

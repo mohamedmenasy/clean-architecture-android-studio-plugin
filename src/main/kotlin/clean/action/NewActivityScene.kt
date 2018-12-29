@@ -62,6 +62,7 @@ class NewActivityScene : AnAction() {
     private fun createScene(sceneName: String, actionEvent: AnActionEvent, project: Project, needLayoutFile: Boolean) {
 
         val facet: AndroidFacet = getAndroidFacet(project)
+
         val fileName = sceneName.sceneNameFormat(NameFormats.FILE)
         val layoutName = sceneName.sceneNameFormat(NameFormats.LAYOUT)
 
@@ -99,6 +100,7 @@ class NewActivityScene : AnAction() {
 
         if (needLayoutFile) {
             val layoutDirectories = ResourceUtils.getResourceSubDirs(ResourceFolderType.LAYOUT, facet)
+
             sceneFileCreator.createLayoutFiles(layoutName, layoutDirectories)
         }
 
@@ -128,6 +130,7 @@ class NewActivityScene : AnAction() {
         if (applicationFacets.isEmpty()) {
             throw IllegalStateException("Android Module has not found")
         }
+
         return applicationFacets[0]
 
     }
