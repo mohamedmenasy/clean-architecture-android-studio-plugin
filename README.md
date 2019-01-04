@@ -33,7 +33,7 @@ This plug-in is generate a new feature as a separate package and create the foll
 
 ## Installing
 
-Download .zip file from releases then tab and install it manually through :
+Download .zip file from [releases](https://github.com/mohamedmenasy/clean-architecture-android-studio-plugin/releases) then tab and install it manually through :
 
 ```
 Preferences/Settings -> Plugins -> Install plugin from disk...
