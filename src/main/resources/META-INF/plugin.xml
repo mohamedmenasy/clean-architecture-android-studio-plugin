@@ -6,7 +6,8 @@
 
     <description><![CDATA[
         This plugin provides the ability to create all files needed to create an feature following the
-        clean architect design pattern
+        clean architect design pattern defined in the following repo:
+        <a href="https://github.com/android10/Android-CleanArchitecture-Kotlin">https://github.com/android10/Android-CleanArchitecture-Kotlin</a>
     ]]></description>
 
     <change-notes><![CDATA[

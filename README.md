@@ -1,10 +1,11 @@
 # Mobliy Clean Arch Plugin
 
-This plugin automatizes the creation of boilerplate needed to develop a new feature for Android Mobily App
+This plugin automatizes the creation of boilerplate needed to develop a new feature for an Android App. This plugin is based on the architecture defined in the following repo :
+[https://github.com/android10/Android-CleanArchitecture-Kotlin](https://github.com/android10/Android-CleanArchitecture-Kotlin)
 
 ## Features
 
-- Creates and configures feature files
+- Creates and configures feature files as following:
     - Activity
     - Fragment
     - ViewModel
@@ -12,6 +13,19 @@ This plugin automatizes the creation of boilerplate needed to develop a new feat
     - Data model file structure
     - Layout (Optional)
     - Manifest activity entry
+- Using [Koin](https://insert-koin.io/) dependency injection framework for Kotlin.
+
+## Package List
+This plug-in is generate a new feature as a separate package and create the following folder structure for each feature :
+-   feature
+	-   data
+		-   remote
+			-   request
+			-   response
+		-   local
+	-   view
+	-   viewmodel
+	-   usecase
 
 ## Usage
 
@@ -19,7 +33,7 @@ This plugin automatizes the creation of boilerplate needed to develop a new feat
 
 ## Installing
 
-Download .zip file tab and install it manually through :
+Download .zip file from releases then tab and install it manually through :
 
 ```
 Preferences/Settings -> Plugins -> Install plugin from disk...
