@@ -1,6 +1,6 @@
 # Android Clean Arch Plugin
 
-This plugin automatizes the creation of boilerplate needed to develop a new feature for an Android App. This plugin is based on the architecture defined in the following repo :
+This plugin automate the creation of boilerplate needed to develop a new feature for an Android App. This plugin is based on the architecture defined in the following repo :
 [https://github.com/android10/Android-CleanArchitecture-Kotlin](https://github.com/android10/Android-CleanArchitecture-Kotlin)
 
 ## Features
